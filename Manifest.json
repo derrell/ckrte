@@ -1,0 +1,34 @@
+{
+  "info" : 
+  {
+    "name" : "ckrte",
+
+    "summary" : "Wrapper and toolbar for CkEditor",
+    "description" : "Allow CkEditor to be controlled via a qooxdoo toolbar",
+    
+    "homepage" : "http://some.homepage.url/",
+
+    "license" : "LGPL/EPL",
+    "authors" : 
+    [
+      {
+        "name" : "Derrell Lipman (derrell)",
+        "email" : "derrell.lipman@unwireduniverse.com"
+      }
+    ],
+
+    "version" : "trunk",
+    "qooxdoo-versions": ["1.5"]
+  },
+  
+  "provides" : 
+  {
+    "namespace"   : "ckrte",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "application"
+  }
+}
+

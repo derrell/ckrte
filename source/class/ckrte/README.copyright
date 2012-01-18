@@ -1,0 +1,11 @@
+Portions of this code are modified versions of code from CKEditor
+(plugins), which bears the following notice:
+
+   Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+
+   CKEditor is licensed under the terms of any of the following:
+     GPL: http://www.gnu.org/licenses/gpl.html
+     LGPl: http://www.gnu.org/licenses/lgpl.html
+     MPL: http://www.mozilla.org/MPL/MPL-1.1.html
+
+The explicit license for CKEditor is at http://ckeditor.com

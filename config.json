@@ -1,0 +1,128 @@
+{
+  "name"    : "ckrte",
+
+  "config-warnings" :
+  {
+    "job-shadowing" :
+    [
+      "source-hybrid",
+      "source",
+      "build",
+      "provider-deps",
+      "migration",
+      "source",
+      "source-hybrid",
+      "libraries",
+      "source-all",
+      "build",
+      "provider",
+      "test",
+      "test-basic",
+      "test-basic-source",
+      "test-source",
+      "source-all-script",
+      "clean",
+      "lint",
+      "source-script",
+      "translation",
+      "build-resources",
+      "build-script",
+      "build-files",
+      "info",
+      "distclean",
+      "api"
+    ]
+  },
+  
+  "include" :
+  [
+    {
+      "path" : "${QOOXDOO_PATH}/tool/data/config/application.json"
+    }
+  ],
+
+  "export" :
+  [
+    "api",
+    "api-data",
+    "build",
+    "clean",
+    "distclean",
+    "fix",
+    "info",
+    "inspector",
+    "lint",
+    "migration",
+    "pretty",
+    "profiling",
+    "source",
+    "source-all",
+    "source-hybrid",
+    "simulation-build",
+    "simulation-run",
+    "test",
+    "test-basic",
+    "test-basic-source",
+    "test-source",
+    "translation"
+  ],
+  
+  "default-job" : "source",
+
+  "let" :
+  {
+    "APPLICATION"  : "ckrte",
+    "QOOXDOO_PATH" : "../aig/lib/qooxdoo",
+    "QXTHEME"      : "ckrte.theme.Theme",
+    "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*", "${APPLICATION}.simulation.*"],
+    "LOCALES"      : [ "en" ],
+    "CACHE"        : "${TMPDIR}/qx${QOOXDOO_VERSION}/cache",
+    "ROOT"         : ".",
+    "OPTIMIZE"     : []
+  },
+
+  "jobs" :
+  {
+    "libraries" : 
+    {
+      "library" :
+      [
+        {
+          "manifest" : "../localfile/trunk/Manifest.json"
+        },
+        {
+          "manifest" : "../aig/lib/uploadwidget/Manifest.json"
+        }
+      ]
+    },
+
+    "build-script" :
+    {
+      "copy-files" :
+      {
+        "files"  :
+        [
+          "ckeditor.js",
+          "config.js",
+          "styles.css",
+          "lang/en.js",
+          "plugins/styles/styles/default.js",
+          "skins/kama/editor.css",
+          "skins/kama/icons.png",
+          "skins/kama/images/sprites.png"
+        ],
+        "source" : "./source",
+        "target" : "./build"
+      }
+/*
+      "compile-options" : 
+      {
+        "code" :
+        {
+          "format" : false
+        }
+      }
+*/
+    }
+  }
+}
