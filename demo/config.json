@@ -37,7 +37,7 @@
   "let" :
   {
     "APPLICATION"  : "ckrte.demo",
-    "QOOXDOO_PATH" : "../../aig/lib/qooxdoo",
+    "QOOXDOO_PATH" : "../../qooxdoo",
     "QXTHEME"      : "ckrte.demo.theme.Theme",
     "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*", "${APPLICATION}.simulation.*"],
     "LOCALES"      : [ "en" ],
@@ -63,7 +63,7 @@
           "manifest" : "../../localfile/trunk/Manifest.json"
         },
         {
-          "manifest" : "../../aig/lib/uploadwidget/Manifest.json"
+          "manifest" : "../../uploadwidget/Manifest.json"
         }
       ]
     }
