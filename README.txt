@@ -23,7 +23,7 @@ your application's index.html to load the ckeditor.js file.
 In theory, you should be able to drop in a more recent version of ckeditor.js
 than this one from summer of 2011, but I haven't tried that.
 
-The demo also requires code from  the following  git repositories.
+The demo also requires code from  the following  git repositories:
 
   git://github.com/qooxdoo-contrib/ckrte.git
   git://github.com/qooxdoo-contrib/localfile.git
