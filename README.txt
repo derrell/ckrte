@@ -25,8 +25,6 @@ than this one from summer of 2011, but I haven't tried that.
 
 The demo also requires code from  the following  git repositories.
 
-To run the demo, clone these repositories:
-
   git://github.com/qooxdoo-contrib/ckrte.git
   git://github.com/qooxdoo-contrib/localfile.git
   git://github.com/qooxdoo-contrib/uploadwidget.git
